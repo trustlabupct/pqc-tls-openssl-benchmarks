@@ -1,0 +1,46 @@
+file,compared_with,relation,declared_openssl,byte_identical,same_qualifying_segment_counts_and_records
+data/raw/openssl-3.4.1/packetization/baseline_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1500/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/baseline_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/baseline_mtu1500/analysis.json,data/raw/openssl-3.4.1/packetization/baseline_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/baseline_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1400/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/baseline_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/baseline_mtu1400/analysis.json,data/raw/openssl-3.4.1/packetization/baseline_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/baseline_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1280/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/baseline_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/baseline_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/baseline_mtu1280/analysis.json,data/raw/openssl-3.4.1/packetization/baseline_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1500/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/hybrid-kem_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/hybrid-kem_mtu1500/analysis.json,data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1400/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/hybrid-kem_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/hybrid-kem_mtu1400/analysis.json,data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1280/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/hybrid-kem_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/hybrid-kem_mtu1280/analysis.json,data/raw/openssl-3.4.1/packetization/hybrid-kem_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1500/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-kem_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-kem_mtu1500/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1400/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-kem_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-kem_mtu1400/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1280/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-kem_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-kem_mtu1280/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-kem_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1500/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-cert_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-cert_mtu1500/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1400/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-cert_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-cert_mtu1400/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1280/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/pqc-cert_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/pqc-cert_mtu1280/analysis.json,data/raw/openssl-3.4.1/packetization/pqc-cert_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/full-pqc_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1500/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/full-pqc_mtu1500/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/full-pqc_mtu1500/analysis.json,data/raw/openssl-3.4.1/packetization/full-pqc_mtu1500/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/full-pqc_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1400/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/full-pqc_mtu1400/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/full-pqc_mtu1400/analysis.json,data/raw/openssl-3.4.1/packetization/full-pqc_mtu1400/analysis.json,lab-server copy,,True,
+data/raw/openssl-3.4.1/packetization/full-pqc_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1280/analysis.json,second capture session,OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025),False,True
+data/raw/lab-server/openssl-3.5.0/packetization/full-pqc_mtu1280/analysis.json,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1280/analysis.json,lab-server copy,,True,
+data/raw/lab-server/openssl-3.4.1/packetization/full-pqc_mtu1280/analysis.json,data/raw/openssl-3.4.1/packetization/full-pqc_mtu1280/analysis.json,lab-server copy,,True,

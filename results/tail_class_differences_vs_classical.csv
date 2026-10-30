@@ -1,0 +1,21 @@
+comparison,loss_pct,delay_class,difference_pct_points,ci95_low,ci95_high
+hybrid - classical,0,sub_second,-0.0125,-0.0375,0
+hybrid - classical,0,one_second,0,0,0
+fullpqc - classical,0,sub_second,-0.0125,-0.0375,0
+fullpqc - classical,0,one_second,0,0,0
+hybrid - classical,0.1,sub_second,-0.0625,-0.15,0.0229167
+hybrid - classical,0.1,one_second,-0.0270833,-0.09375,0.0354167
+fullpqc - classical,0.1,sub_second,0.0479167,-0.05625,0.154167
+fullpqc - classical,0.1,one_second,-0.0645833,-0.13125,-0.00208333
+hybrid - classical,0.5,sub_second,-0.277083,-0.497917,-0.05625
+hybrid - classical,0.5,one_second,-0.05,-0.15,0.05625
+fullpqc - classical,0.5,sub_second,0.0958333,-0.229167,0.429167
+fullpqc - classical,0.5,one_second,-0.03125,-0.14375,0.075
+hybrid - classical,1,sub_second,-0.295833,-0.6125,0.03125
+hybrid - classical,1,one_second,0.15625,-0.0291667,0.339583
+fullpqc - classical,1,sub_second,0.554167,-0.0250521,1.13964
+fullpqc - classical,1,one_second,0.2375,0.10625,0.364583
+hybrid - classical,2,sub_second,-0.6875,-1.1188,-0.235417
+hybrid - classical,2,one_second,0.141667,-0.152083,0.429167
+fullpqc - classical,2,sub_second,0.35625,-0.414583,1.16464
+fullpqc - classical,2,one_second,0.135417,-0.104167,0.38125

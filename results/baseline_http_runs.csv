@@ -1,0 +1,17 @@
+host,openssl,config,key_establishment,authentication,file,n,median_ttfb_ms,ci95_low_ms,ci95_high_ms,recorded_key_exchange,recorded_signature_type,recorded_cipher,reuse
+laptop,3.4.1,classical,X25519,RSA-PSS (RSA-2048),data/raw/openssl-3.4.1/20-http-openssl-classical.json,20,51.4962,51.3251,52.5343,X25519,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+laptop,3.4.1,hybrid,X25519MLKEM768,RSA-PSS (RSA-2048),data/raw/openssl-3.4.1/18-http-openssl-hybrid.json,20,54.8295,54.2694,60.5077,X25519MLKEM768,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+laptop,3.4.1,mlkem768_rsa,ML-KEM-768,RSA-PSS (RSA-2048),data/raw/openssl-3.4.1/23-http-openssl-pqc-mlkem768.json,20,37.0201,35.5409,37.898,mlkem768,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+laptop,3.4.1,fullpqc,ML-KEM-768,ML-DSA-65,data/raw/openssl-3.4.1/35-http-openssl-fullpqc-mlkem768-mldsa65.json,20,34.0195,33.4269,35.3484,mlkem768,mldsa65,TLS_AES_256_GCM_SHA384,none
+laptop,3.5.0,classical,X25519,RSA-PSS (RSA-2048),data/raw/openssl-3.5.0/20-http-openssl-classical.json,20,22.0952,22.0239,22.2027,X25519,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+laptop,3.5.0,hybrid,X25519MLKEM768,RSA-PSS (RSA-2048),data/raw/openssl-3.5.0/18-http-openssl-hybrid.json,20,22.355,22.2791,22.4383,X25519MLKEM768,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+laptop,3.5.0,mlkem768_rsa,ML-KEM-768,RSA-PSS (RSA-2048),data/raw/openssl-3.5.0/23-http-openssl-pqc-mlkem768.json,20,25.5282,25.0066,27.1006,mlkem768,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+laptop,3.5.0,fullpqc,ML-KEM-768,ML-DSA-65,data/raw/openssl-3.5.0/35-http-openssl-fullpqc-mlkem768-mldsa65.json,20,22.7025,22.4216,23.1406,mlkem768,mldsa65,TLS_AES_256_GCM_SHA384,none
+lab-server,3.4.1,classical,X25519,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.4.1/20-http-openssl-classical.json,20,20.4136,20.1406,20.5606,X25519,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+lab-server,3.4.1,hybrid,X25519MLKEM768,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.4.1/18-http-openssl-hybrid.json,20,21.9445,21.747,22.0729,X25519MLKEM768,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+lab-server,3.4.1,mlkem768_rsa,ML-KEM-768,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.4.1/23-http-openssl-pqc-mlkem768.json,20,20.7188,20.4276,20.8267,mlkem768,RSA-PSS,TLS_AES_256_GCM_SHA384,none
+lab-server,3.4.1,fullpqc,ML-KEM-768,ML-DSA-65,data/raw/lab-server/openssl-3.4.1/35-http-openssl-fullpqc-mlkem768-mldsa65.json,20,20.7348,20.6391,20.8989,mlkem768,mldsa65,TLS_AES_256_GCM_SHA384,none
+lab-server,3.5.0,classical,X25519,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.5.0/20-http-openssl-classical.json,20,16.3125,15.7516,16.8114,X25519,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+lab-server,3.5.0,hybrid,X25519MLKEM768,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.5.0/18-http-openssl-hybrid.json,20,16.5266,16.0653,17.0469,X25519MLKEM768,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+lab-server,3.5.0,mlkem768_rsa,ML-KEM-768,RSA-PSS (RSA-2048),data/raw/lab-server/openssl-3.5.0/23-http-openssl-pqc-mlkem768.json,20,14.2052,14.1099,14.3411,mlkem768,rsa_pss_rsae_sha256,TLS_AES_256_GCM_SHA384,none
+lab-server,3.5.0,fullpqc,ML-KEM-768,ML-DSA-65,data/raw/lab-server/openssl-3.5.0/35-http-openssl-fullpqc-mlkem768-mldsa65.json,20,14.2985,14.1227,14.5792,mlkem768,mldsa65,TLS_AES_256_GCM_SHA384,none

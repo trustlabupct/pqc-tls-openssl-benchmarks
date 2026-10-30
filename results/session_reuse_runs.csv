@@ -1,0 +1,7 @@
+host,openssl,no_reuse_file,session_reuse_file,no_reuse_median_ms,session_reuse_median_ms,diff_ms,diff_ci95_low_ms,diff_ci95_high_ms,diff_pct
+laptop,3.4.1,data/raw/openssl-3.4.1/18-http-openssl-hybrid.json,data/raw/openssl-3.4.1/19-http-openssl-hybrid-session.json,54.8295,54.9726,0.143092,-6.02231,0.955038,0.260976
+laptop,3.5.0,data/raw/openssl-3.5.0/18-http-openssl-hybrid.json,data/raw/openssl-3.5.0/19-http-openssl-hybrid-session.json,22.355,21.9015,-0.453473,-0.613163,-0.33147,-2.02851
+laptop,3.5.0,data/raw/openssl-3.5.0/37-http-native-x25519mlkem768.json,data/raw/openssl-3.5.0/38-http-native-x25519mlkem768-session.json,22.3843,21.8745,-0.509823,-0.636108,-0.329752,-2.27759
+lab-server,3.4.1,data/raw/lab-server/openssl-3.4.1/18-http-openssl-hybrid.json,data/raw/lab-server/openssl-3.4.1/19-http-openssl-hybrid-session.json,21.9445,20.8875,-1.057,-1.26686,-0.723309,-4.8167
+lab-server,3.5.0,data/raw/lab-server/openssl-3.5.0/18-http-openssl-hybrid.json,data/raw/lab-server/openssl-3.5.0/19-http-openssl-hybrid-session.json,16.5266,15.8757,-0.650877,-1.55521,0.0338345,-3.93836
+lab-server,3.5.0,data/raw/lab-server/openssl-3.5.0/37-http-native-x25519mlkem768.json,data/raw/lab-server/openssl-3.5.0/38-http-native-x25519mlkem768-session.json,16.6768,16.4185,-0.258218,-0.899841,0.22463,-1.54837

@@ -1,0 +1,66 @@
+scenario,key_establishment,authentication,direction,message_inferred,record_content_type,record_length_bytes
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,ServerHello,handshake,122
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,ChangeCipherSpec,change_cipher_spec,1
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,EncryptedExtensions,application_data,23
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,Certificate,application_data,779
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,CertificateVerify,application_data,281
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,Finished,application_data,69
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+baseline,X25519,RSA-2048 (RSA-PSS),server->client,Alert (close_notify),application_data,19
+baseline,X25519,RSA-2048 (RSA-PSS),client->server,ClientHello,handshake,308
+baseline,X25519,RSA-2048 (RSA-PSS),client->server,ChangeCipherSpec,change_cipher_spec,1
+baseline,X25519,RSA-2048 (RSA-PSS),client->server,Finished,application_data,69
+baseline,X25519,RSA-2048 (RSA-PSS),client->server,Alert (close_notify),application_data,19
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,ServerHello,handshake,1210
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,ChangeCipherSpec,change_cipher_spec,1
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,EncryptedExtensions,application_data,23
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,Certificate,application_data,779
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,CertificateVerify,application_data,281
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,Finished,application_data,69
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),server->client,Alert (close_notify),application_data,19
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),client->server,ClientHello,handshake,1484
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),client->server,ChangeCipherSpec,change_cipher_spec,1
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),client->server,Finished,application_data,69
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),client->server,Alert (close_notify),application_data,19
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,ServerHello,handshake,1178
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,ChangeCipherSpec,change_cipher_spec,1
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,EncryptedExtensions,application_data,23
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,Certificate,application_data,779
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,CertificateVerify,application_data,281
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,Finished,application_data,69
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,NewSessionTicket,application_data,250
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),server->client,Alert (close_notify),application_data,19
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),client->server,ClientHello,handshake,1452
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),client->server,ChangeCipherSpec,change_cipher_spec,1
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),client->server,Finished,application_data,69
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),client->server,Alert (close_notify),application_data,19
+pqc-cert,X25519,ML-DSA-65,server->client,ServerHello,handshake,122
+pqc-cert,X25519,ML-DSA-65,server->client,ChangeCipherSpec,change_cipher_spec,1
+pqc-cert,X25519,ML-DSA-65,server->client,EncryptedExtensions,application_data,23
+pqc-cert,X25519,ML-DSA-65,server->client,Certificate,application_data,5508
+pqc-cert,X25519,ML-DSA-65,server->client,CertificateVerify,application_data,3334
+pqc-cert,X25519,ML-DSA-65,server->client,Finished,application_data,69
+pqc-cert,X25519,ML-DSA-65,server->client,NewSessionTicket,application_data,250
+pqc-cert,X25519,ML-DSA-65,server->client,NewSessionTicket,application_data,250
+pqc-cert,X25519,ML-DSA-65,server->client,Alert (close_notify),application_data,19
+pqc-cert,X25519,ML-DSA-65,client->server,ClientHello,handshake,308
+pqc-cert,X25519,ML-DSA-65,client->server,ChangeCipherSpec,change_cipher_spec,1
+pqc-cert,X25519,ML-DSA-65,client->server,Finished,application_data,69
+pqc-cert,X25519,ML-DSA-65,client->server,Alert (close_notify),application_data,19
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,ServerHello,handshake,1178
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,ChangeCipherSpec,change_cipher_spec,1
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,EncryptedExtensions,application_data,23
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,Certificate,application_data,5508
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,CertificateVerify,application_data,3334
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,Finished,application_data,69
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,NewSessionTicket,application_data,250
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,NewSessionTicket,application_data,250
+full-pqc,ML-KEM-768,ML-DSA-65,server->client,Alert (close_notify),application_data,19
+full-pqc,ML-KEM-768,ML-DSA-65,client->server,ClientHello,handshake,1452
+full-pqc,ML-KEM-768,ML-DSA-65,client->server,ChangeCipherSpec,change_cipher_spec,1
+full-pqc,ML-KEM-768,ML-DSA-65,client->server,Finished,application_data,69
+full-pqc,ML-KEM-768,ML-DSA-65,client->server,Alert (close_notify),application_data,19

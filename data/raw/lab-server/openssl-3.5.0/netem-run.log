@@ -1,0 +1,1631 @@
+[sudo] contraseña para crypto: Using OpenSSL: OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025)
+Binary: /opt/openssl-3.5/bin/openssl
+Library path: /opt/openssl-3.5/lib64
+Native PQC support: YES (will run native ML-KEM benchmarks)
+
+==========================================
+PQC Benchmark Suite - Starting Full Run
+==========================================
+Started at: vie 19 dic 2025 12:39:17 CET
+HTTP-only mode (skipping crypto/TLS batches)
+
+
+Local HTTP test server started: https://localhost:38209/
+==========================================
+HTTP benchmarks enabled
+Target URL: https://localhost:38209/
+==========================================
+[HTTP/1] OpenSSL (hybrid group X25519MLKEM768)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:38209/ (openssl)
+
+Results written to results/openssl-3.5.0/18-http-openssl-hybrid.json
+       Done at: vie 19 dic 2025 12:39:18 CET
+[HTTP/2] OpenSSL (hybrid + session reuse)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:38209/ (openssl)
+
+Results written to results/openssl-3.5.0/19-http-openssl-hybrid-session.json
+       Done at: vie 19 dic 2025 12:39:19 CET
+[HTTP/3] OpenSSL (classical group X25519)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:38209/ (openssl)
+
+Results written to results/openssl-3.5.0/20-http-openssl-classical.json
+       Done at: vie 19 dic 2025 12:39:19 CET
+[HTTP/4] Playwright (chromium, reuse=context)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:38209/ (playwright)
+
+Results written to results/openssl-3.5.0/21-http-playwright-chromium.json
+       Done at: vie 19 dic 2025 12:39:20 CET
+
+==========================================
+Native PQC HTTP benchmarks (OpenSSL 3.5+)
+==========================================
+Native HTTP test server started: https://localhost:37313/
+[HTTP/Native-1] OpenSSL 3.5 native (X25519MLKEM768)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:37313/ (openssl)
+
+Results written to results/openssl-3.5.0/37-http-native-x25519mlkem768.json
+       Done at: vie 19 dic 2025 12:39:21 CET
+[HTTP/Native-2] OpenSSL 3.5 native (X25519MLKEM768 + session)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:37313/ (openssl)
+
+Results written to results/openssl-3.5.0/38-http-native-x25519mlkem768-session.json
+       Done at: vie 19 dic 2025 12:39:22 CET
+[HTTP/Native-3] OpenSSL 3.5 native (SecP256r1MLKEM768)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:37313/ (openssl)
+
+Results written to results/openssl-3.5.0/39-http-native-secp256r1mlkem768.json
+       Done at: vie 19 dic 2025 12:39:22 CET
+[HTTP/Native-4] OpenSSL 3.5 native (SecP384r1MLKEM1024)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:37313/ (openssl)
+
+Results written to results/openssl-3.5.0/40-http-native-secp384r1mlkem1024.json
+       Done at: vie 19 dic 2025 12:39:23 CET
+[HTTP/Native-5] OpenSSL 3.5 native (X25519 baseline)...
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://localhost:37313/ (openssl)
+
+Results written to results/openssl-3.5.0/41-http-native-x25519.json
+       Done at: vie 19 dic 2025 12:39:23 CET
+
+==========================================
+Network impairment sweeps (netem)
+==========================================
+MTUs: 1500 1400 1280
+RTT (ms): 0 20 50 100
+Loss (%): 0 0.1 0.5 1 2
+Rate cap: none
+Netem dir: both
+Samples: 1000 (warm-up: 100)
+Timeout: 5s
+Cases: 3
+PCAP: enabled (iterations=5, keep_pcap=0)
+
+[NETEM] 50 classical mtu=1500 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/50-netem-http-classical_mtu1500_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0/analysis.json
+[NETEM] 51 classical mtu=1500 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/51-netem-http-classical_mtu1500_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p1/analysis.json
+[NETEM] 52 classical mtu=1500 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/52-netem-http-classical_mtu1500_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p5/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss0p5/analysis.json
+[NETEM] 53 classical mtu=1500 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/53-netem-http-classical_mtu1500_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss1/analysis.json
+[NETEM] 54 classical mtu=1500 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/54-netem-http-classical_mtu1500_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss2/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt0_loss2/analysis.json
+[NETEM] 55 classical mtu=1500 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/55-netem-http-classical_mtu1500_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0/analysis.json
+[NETEM] 56 classical mtu=1500 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/56-netem-http-classical_mtu1500_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p1/analysis.json
+[NETEM] 57 classical mtu=1500 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/57-netem-http-classical_mtu1500_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p5/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss0p5/analysis.json
+[NETEM] 58 classical mtu=1500 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/58-netem-http-classical_mtu1500_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss1/analysis.json
+[NETEM] 59 classical mtu=1500 rtt=20 loss=2
+       Saved: results/openssl-3.5.0/59-netem-http-classical_mtu1500_rtt20_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss2/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt20_loss2/analysis.json
+[NETEM] 60 classical mtu=1500 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/60-netem-http-classical_mtu1500_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0/analysis.json
+[NETEM] 61 classical mtu=1500 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/61-netem-http-classical_mtu1500_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p1/analysis.json
+[NETEM] 62 classical mtu=1500 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/62-netem-http-classical_mtu1500_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p5/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss0p5/analysis.json
+[NETEM] 63 classical mtu=1500 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/63-netem-http-classical_mtu1500_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss1/analysis.json
+[NETEM] 64 classical mtu=1500 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/64-netem-http-classical_mtu1500_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss2/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt50_loss2/analysis.json
+[NETEM] 65 classical mtu=1500 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/65-netem-http-classical_mtu1500_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0/analysis.json
+[NETEM] 66 classical mtu=1500 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/66-netem-http-classical_mtu1500_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p1/analysis.json
+[NETEM] 67 classical mtu=1500 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/67-netem-http-classical_mtu1500_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p5/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss0p5/analysis.json
+[NETEM] 68 classical mtu=1500 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/68-netem-http-classical_mtu1500_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss1/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss1/analysis.json
+[NETEM] 69 classical mtu=1500 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/69-netem-http-classical_mtu1500_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss2/capture_X25519_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1500_rtt100_loss2/analysis.json
+[NETEM] 70 classical mtu=1400 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/70-netem-http-classical_mtu1400_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0/analysis.json
+[NETEM] 71 classical mtu=1400 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/71-netem-http-classical_mtu1400_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p1/analysis.json
+[NETEM] 72 classical mtu=1400 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/72-netem-http-classical_mtu1400_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p5/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss0p5/analysis.json
+[NETEM] 73 classical mtu=1400 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/73-netem-http-classical_mtu1400_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss1/analysis.json
+[NETEM] 74 classical mtu=1400 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/74-netem-http-classical_mtu1400_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss2/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt0_loss2/analysis.json
+[NETEM] 75 classical mtu=1400 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/75-netem-http-classical_mtu1400_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0/analysis.json
+[NETEM] 76 classical mtu=1400 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/76-netem-http-classical_mtu1400_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p1/analysis.json
+[NETEM] 77 classical mtu=1400 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/77-netem-http-classical_mtu1400_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p5/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss0p5/analysis.json
+[NETEM] 78 classical mtu=1400 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/78-netem-http-classical_mtu1400_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt20_loss1/analysis.json
+[NETEM] 79 classical mtu=1400 rtt=20 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519 sig=rsa:2048 mtu=1400 rtt_ms=20 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/79-netem-http-classical_mtu1400_rtt20_loss2.json
+RESULT_FILE: results/openssl-3.5.0/79-netem-http-classical_mtu1400_rtt20_loss2.json
+[NETEM] 80 classical mtu=1400 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/80-netem-http-classical_mtu1400_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0/analysis.json
+[NETEM] 81 classical mtu=1400 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/81-netem-http-classical_mtu1400_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p1/analysis.json
+[NETEM] 82 classical mtu=1400 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/82-netem-http-classical_mtu1400_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p5/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss0p5/analysis.json
+[NETEM] 83 classical mtu=1400 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/83-netem-http-classical_mtu1400_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss1/analysis.json
+[NETEM] 84 classical mtu=1400 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/84-netem-http-classical_mtu1400_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss2/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt50_loss2/analysis.json
+[NETEM] 85 classical mtu=1400 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/85-netem-http-classical_mtu1400_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0/analysis.json
+[NETEM] 86 classical mtu=1400 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/86-netem-http-classical_mtu1400_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p1/analysis.json
+[NETEM] 87 classical mtu=1400 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/87-netem-http-classical_mtu1400_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p5/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss0p5/analysis.json
+[NETEM] 88 classical mtu=1400 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/88-netem-http-classical_mtu1400_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss1/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss1/analysis.json
+[NETEM] 89 classical mtu=1400 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/89-netem-http-classical_mtu1400_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss2/capture_X25519_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1400_rtt100_loss2/analysis.json
+[NETEM] 90 classical mtu=1280 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/90-netem-http-classical_mtu1280_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0/analysis.json
+[NETEM] 91 classical mtu=1280 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/91-netem-http-classical_mtu1280_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p1/analysis.json
+[NETEM] 92 classical mtu=1280 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/92-netem-http-classical_mtu1280_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p5/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss0p5/analysis.json
+[NETEM] 93 classical mtu=1280 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/93-netem-http-classical_mtu1280_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss1/analysis.json
+[NETEM] 94 classical mtu=1280 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/94-netem-http-classical_mtu1280_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss2/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt0_loss2/analysis.json
+[NETEM] 95 classical mtu=1280 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/95-netem-http-classical_mtu1280_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0/analysis.json
+[NETEM] 96 classical mtu=1280 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/96-netem-http-classical_mtu1280_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p1/analysis.json
+[NETEM] 97 classical mtu=1280 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/97-netem-http-classical_mtu1280_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p5/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss0p5/analysis.json
+[NETEM] 98 classical mtu=1280 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/98-netem-http-classical_mtu1280_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss1/analysis.json
+[NETEM] 99 classical mtu=1280 rtt=20 loss=2
+       Saved: results/openssl-3.5.0/99-netem-http-classical_mtu1280_rtt20_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss2/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt20_loss2/analysis.json
+[NETEM] 100 classical mtu=1280 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/100-netem-http-classical_mtu1280_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0/analysis.json
+[NETEM] 101 classical mtu=1280 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/101-netem-http-classical_mtu1280_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p1/analysis.json
+[NETEM] 102 classical mtu=1280 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/102-netem-http-classical_mtu1280_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p5/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss0p5/analysis.json
+[NETEM] 103 classical mtu=1280 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/103-netem-http-classical_mtu1280_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss1/analysis.json
+[NETEM] 104 classical mtu=1280 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/104-netem-http-classical_mtu1280_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss2/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt50_loss2/analysis.json
+[NETEM] 105 classical mtu=1280 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/105-netem-http-classical_mtu1280_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0/analysis.json
+[NETEM] 106 classical mtu=1280 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/106-netem-http-classical_mtu1280_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p1/analysis.json
+[NETEM] 107 classical mtu=1280 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/107-netem-http-classical_mtu1280_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p5/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss0p5/analysis.json
+[NETEM] 108 classical mtu=1280 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/108-netem-http-classical_mtu1280_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss1/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss1/analysis.json
+[NETEM] 109 classical mtu=1280 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/109-netem-http-classical_mtu1280_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss2/capture_X25519_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/classical_mtu1280_rtt100_loss2/analysis.json
+[NETEM] 110 hybrid mtu=1500 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/110-netem-http-hybrid_mtu1500_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0/analysis.json
+[NETEM] 111 hybrid mtu=1500 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/111-netem-http-hybrid_mtu1500_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p1/analysis.json
+[NETEM] 112 hybrid mtu=1500 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/112-netem-http-hybrid_mtu1500_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss0p5/analysis.json
+[NETEM] 113 hybrid mtu=1500 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/113-netem-http-hybrid_mtu1500_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss1/analysis.json
+[NETEM] 114 hybrid mtu=1500 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/114-netem-http-hybrid_mtu1500_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss2/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt0_loss2/analysis.json
+[NETEM] 115 hybrid mtu=1500 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/115-netem-http-hybrid_mtu1500_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0/analysis.json
+[NETEM] 116 hybrid mtu=1500 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/116-netem-http-hybrid_mtu1500_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p1/analysis.json
+[NETEM] 117 hybrid mtu=1500 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/117-netem-http-hybrid_mtu1500_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss0p5/analysis.json
+[NETEM] 118 hybrid mtu=1500 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/118-netem-http-hybrid_mtu1500_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt20_loss1/analysis.json
+[NETEM] 119 hybrid mtu=1500 rtt=20 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1500 rtt_ms=20 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/119-netem-http-hybrid_mtu1500_rtt20_loss2.json
+RESULT_FILE: results/openssl-3.5.0/119-netem-http-hybrid_mtu1500_rtt20_loss2.json
+[NETEM] 120 hybrid mtu=1500 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/120-netem-http-hybrid_mtu1500_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0/analysis.json
+[NETEM] 121 hybrid mtu=1500 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/121-netem-http-hybrid_mtu1500_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p1/analysis.json
+[NETEM] 122 hybrid mtu=1500 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/122-netem-http-hybrid_mtu1500_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss0p5/analysis.json
+[NETEM] 123 hybrid mtu=1500 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/123-netem-http-hybrid_mtu1500_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss1/analysis.json
+[NETEM] 124 hybrid mtu=1500 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/124-netem-http-hybrid_mtu1500_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss2/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt50_loss2/analysis.json
+[NETEM] 125 hybrid mtu=1500 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/125-netem-http-hybrid_mtu1500_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0/analysis.json
+[NETEM] 126 hybrid mtu=1500 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/126-netem-http-hybrid_mtu1500_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p1/analysis.json
+[NETEM] 127 hybrid mtu=1500 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/127-netem-http-hybrid_mtu1500_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss0p5/analysis.json
+[NETEM] 128 hybrid mtu=1500 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/128-netem-http-hybrid_mtu1500_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss1/capture_X25519MLKEM768_rsa2048_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1500_rtt100_loss1/analysis.json
+[NETEM] 129 hybrid mtu=1500 rtt=100 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1500 rtt_ms=100 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/129-netem-http-hybrid_mtu1500_rtt100_loss2.json
+RESULT_FILE: results/openssl-3.5.0/129-netem-http-hybrid_mtu1500_rtt100_loss2.json
+[NETEM] 130 hybrid mtu=1400 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/130-netem-http-hybrid_mtu1400_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0/analysis.json
+[NETEM] 131 hybrid mtu=1400 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/131-netem-http-hybrid_mtu1400_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p1/analysis.json
+[NETEM] 132 hybrid mtu=1400 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/132-netem-http-hybrid_mtu1400_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss0p5/analysis.json
+[NETEM] 133 hybrid mtu=1400 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/133-netem-http-hybrid_mtu1400_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt0_loss1/analysis.json
+[NETEM] 134 hybrid mtu=1400 rtt=0 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1400 rtt_ms=0 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/134-netem-http-hybrid_mtu1400_rtt0_loss2.json
+RESULT_FILE: results/openssl-3.5.0/134-netem-http-hybrid_mtu1400_rtt0_loss2.json
+[NETEM] 135 hybrid mtu=1400 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/135-netem-http-hybrid_mtu1400_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0/analysis.json
+[NETEM] 136 hybrid mtu=1400 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/136-netem-http-hybrid_mtu1400_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p1/analysis.json
+[NETEM] 137 hybrid mtu=1400 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/137-netem-http-hybrid_mtu1400_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss0p5/analysis.json
+[NETEM] 138 hybrid mtu=1400 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/138-netem-http-hybrid_mtu1400_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss1/analysis.json
+[NETEM] 139 hybrid mtu=1400 rtt=20 loss=2
+       Saved: results/openssl-3.5.0/139-netem-http-hybrid_mtu1400_rtt20_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss2/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt20_loss2/analysis.json
+[NETEM] 140 hybrid mtu=1400 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/140-netem-http-hybrid_mtu1400_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0/analysis.json
+[NETEM] 141 hybrid mtu=1400 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/141-netem-http-hybrid_mtu1400_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p1/analysis.json
+[NETEM] 142 hybrid mtu=1400 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/142-netem-http-hybrid_mtu1400_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss0p5/analysis.json
+[NETEM] 143 hybrid mtu=1400 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/143-netem-http-hybrid_mtu1400_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss1/analysis.json
+[NETEM] 144 hybrid mtu=1400 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/144-netem-http-hybrid_mtu1400_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss2/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt50_loss2/analysis.json
+[NETEM] 145 hybrid mtu=1400 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/145-netem-http-hybrid_mtu1400_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0/analysis.json
+[NETEM] 146 hybrid mtu=1400 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/146-netem-http-hybrid_mtu1400_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss0p1/analysis.json
+[NETEM] 147 hybrid mtu=1400 rtt=100 loss=0.5
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1400 rtt_ms=100 loss_pct=0.5 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/147-netem-http-hybrid_mtu1400_rtt100_loss0p5.json
+RESULT_FILE: results/openssl-3.5.0/147-netem-http-hybrid_mtu1400_rtt100_loss0p5.json
+[NETEM] 148 hybrid mtu=1400 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/148-netem-http-hybrid_mtu1400_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss1/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss1/analysis.json
+[NETEM] 149 hybrid mtu=1400 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/149-netem-http-hybrid_mtu1400_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss2/capture_X25519MLKEM768_rsa2048_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1400_rtt100_loss2/analysis.json
+[NETEM] 150 hybrid mtu=1280 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/150-netem-http-hybrid_mtu1280_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0/analysis.json
+[NETEM] 151 hybrid mtu=1280 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/151-netem-http-hybrid_mtu1280_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p1/analysis.json
+[NETEM] 152 hybrid mtu=1280 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/152-netem-http-hybrid_mtu1280_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss0p5/analysis.json
+[NETEM] 153 hybrid mtu=1280 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/153-netem-http-hybrid_mtu1280_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt0_loss1/analysis.json
+[NETEM] 154 hybrid mtu=1280 rtt=0 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1280 rtt_ms=0 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/154-netem-http-hybrid_mtu1280_rtt0_loss2.json
+RESULT_FILE: results/openssl-3.5.0/154-netem-http-hybrid_mtu1280_rtt0_loss2.json
+[NETEM] 155 hybrid mtu=1280 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/155-netem-http-hybrid_mtu1280_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0/analysis.json
+[NETEM] 156 hybrid mtu=1280 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/156-netem-http-hybrid_mtu1280_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p1/analysis.json
+[NETEM] 157 hybrid mtu=1280 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/157-netem-http-hybrid_mtu1280_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss0p5/analysis.json
+[NETEM] 158 hybrid mtu=1280 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/158-netem-http-hybrid_mtu1280_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt20_loss1/analysis.json
+[NETEM] 159 hybrid mtu=1280 rtt=20 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1280 rtt_ms=20 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/159-netem-http-hybrid_mtu1280_rtt20_loss2.json
+RESULT_FILE: results/openssl-3.5.0/159-netem-http-hybrid_mtu1280_rtt20_loss2.json
+[NETEM] 160 hybrid mtu=1280 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/160-netem-http-hybrid_mtu1280_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0/analysis.json
+[NETEM] 161 hybrid mtu=1280 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/161-netem-http-hybrid_mtu1280_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p1/analysis.json
+[NETEM] 162 hybrid mtu=1280 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/162-netem-http-hybrid_mtu1280_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss0p5/analysis.json
+[NETEM] 163 hybrid mtu=1280 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/163-netem-http-hybrid_mtu1280_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt50_loss1/analysis.json
+[NETEM] 164 hybrid mtu=1280 rtt=50 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1280 rtt_ms=50 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/164-netem-http-hybrid_mtu1280_rtt50_loss2.json
+RESULT_FILE: results/openssl-3.5.0/164-netem-http-hybrid_mtu1280_rtt50_loss2.json
+[NETEM] 165 hybrid mtu=1280 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/165-netem-http-hybrid_mtu1280_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0/analysis.json
+[NETEM] 166 hybrid mtu=1280 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/166-netem-http-hybrid_mtu1280_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p1/analysis.json
+[NETEM] 167 hybrid mtu=1280 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/167-netem-http-hybrid_mtu1280_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p5/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss0p5/analysis.json
+[NETEM] 168 hybrid mtu=1280 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/168-netem-http-hybrid_mtu1280_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss1/capture_X25519MLKEM768_rsa2048_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/hybrid_mtu1280_rtt100_loss1/analysis.json
+[NETEM] 169 hybrid mtu=1280 rtt=100 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=X25519MLKEM768 sig=rsa:2048 mtu=1280 rtt_ms=100 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/169-netem-http-hybrid_mtu1280_rtt100_loss2.json
+RESULT_FILE: results/openssl-3.5.0/169-netem-http-hybrid_mtu1280_rtt100_loss2.json
+[NETEM] 170 fullpqc mtu=1500 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/170-netem-http-fullpqc_mtu1500_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0/analysis.json
+[NETEM] 171 fullpqc mtu=1500 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/171-netem-http-fullpqc_mtu1500_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p1/analysis.json
+[NETEM] 172 fullpqc mtu=1500 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/172-netem-http-fullpqc_mtu1500_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p5/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss0p5/analysis.json
+[NETEM] 173 fullpqc mtu=1500 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/173-netem-http-fullpqc_mtu1500_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt0_loss1/analysis.json
+[NETEM] 174 fullpqc mtu=1500 rtt=0 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1500 rtt_ms=0 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/174-netem-http-fullpqc_mtu1500_rtt0_loss2.json
+RESULT_FILE: results/openssl-3.5.0/174-netem-http-fullpqc_mtu1500_rtt0_loss2.json
+[NETEM] 175 fullpqc mtu=1500 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/175-netem-http-fullpqc_mtu1500_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0/analysis.json
+[NETEM] 176 fullpqc mtu=1500 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/176-netem-http-fullpqc_mtu1500_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p1/analysis.json
+[NETEM] 177 fullpqc mtu=1500 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/177-netem-http-fullpqc_mtu1500_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p5/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss0p5/analysis.json
+[NETEM] 178 fullpqc mtu=1500 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/178-netem-http-fullpqc_mtu1500_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt20_loss1/analysis.json
+[NETEM] 179 fullpqc mtu=1500 rtt=20 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1500 rtt_ms=20 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/179-netem-http-fullpqc_mtu1500_rtt20_loss2.json
+RESULT_FILE: results/openssl-3.5.0/179-netem-http-fullpqc_mtu1500_rtt20_loss2.json
+[NETEM] 180 fullpqc mtu=1500 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/180-netem-http-fullpqc_mtu1500_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0/analysis.json
+[NETEM] 181 fullpqc mtu=1500 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/181-netem-http-fullpqc_mtu1500_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p1/analysis.json
+[NETEM] 182 fullpqc mtu=1500 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/182-netem-http-fullpqc_mtu1500_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p5/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss0p5/analysis.json
+[NETEM] 183 fullpqc mtu=1500 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/183-netem-http-fullpqc_mtu1500_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt50_loss1/analysis.json
+[NETEM] 184 fullpqc mtu=1500 rtt=50 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1500 rtt_ms=50 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/184-netem-http-fullpqc_mtu1500_rtt50_loss2.json
+RESULT_FILE: results/openssl-3.5.0/184-netem-http-fullpqc_mtu1500_rtt50_loss2.json
+[NETEM] 185 fullpqc mtu=1500 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/185-netem-http-fullpqc_mtu1500_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0/analysis.json
+[NETEM] 186 fullpqc mtu=1500 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/186-netem-http-fullpqc_mtu1500_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p1/analysis.json
+[NETEM] 187 fullpqc mtu=1500 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/187-netem-http-fullpqc_mtu1500_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p5/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss0p5/analysis.json
+[NETEM] 188 fullpqc mtu=1500 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/188-netem-http-fullpqc_mtu1500_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss1/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss1/analysis.json
+[NETEM] 189 fullpqc mtu=1500 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/189-netem-http-fullpqc_mtu1500_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss2/capture_mlkem768_mldsa65_mtu1500.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1500_rtt100_loss2/analysis.json
+[NETEM] 190 fullpqc mtu=1400 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/190-netem-http-fullpqc_mtu1400_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0/analysis.json
+[NETEM] 191 fullpqc mtu=1400 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/191-netem-http-fullpqc_mtu1400_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p1/analysis.json
+[NETEM] 192 fullpqc mtu=1400 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/192-netem-http-fullpqc_mtu1400_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p5/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss0p5/analysis.json
+[NETEM] 193 fullpqc mtu=1400 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/193-netem-http-fullpqc_mtu1400_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss1/analysis.json
+[NETEM] 194 fullpqc mtu=1400 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/194-netem-http-fullpqc_mtu1400_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss2/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt0_loss2/analysis.json
+[NETEM] 195 fullpqc mtu=1400 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/195-netem-http-fullpqc_mtu1400_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0/analysis.json
+[NETEM] 196 fullpqc mtu=1400 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/196-netem-http-fullpqc_mtu1400_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p1/analysis.json
+[NETEM] 197 fullpqc mtu=1400 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/197-netem-http-fullpqc_mtu1400_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p5/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss0p5/analysis.json
+[NETEM] 198 fullpqc mtu=1400 rtt=20 loss=1
+       Saved: results/openssl-3.5.0/198-netem-http-fullpqc_mtu1400_rtt20_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt20_loss1/analysis.json
+[NETEM] 199 fullpqc mtu=1400 rtt=20 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1400 rtt_ms=20 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/199-netem-http-fullpqc_mtu1400_rtt20_loss2.json
+RESULT_FILE: results/openssl-3.5.0/199-netem-http-fullpqc_mtu1400_rtt20_loss2.json
+[NETEM] 200 fullpqc mtu=1400 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/200-netem-http-fullpqc_mtu1400_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0/analysis.json
+[NETEM] 201 fullpqc mtu=1400 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/201-netem-http-fullpqc_mtu1400_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p1/analysis.json
+[NETEM] 202 fullpqc mtu=1400 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/202-netem-http-fullpqc_mtu1400_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p5/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss0p5/analysis.json
+[NETEM] 203 fullpqc mtu=1400 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/203-netem-http-fullpqc_mtu1400_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss1/analysis.json
+[NETEM] 204 fullpqc mtu=1400 rtt=50 loss=2
+       Saved: results/openssl-3.5.0/204-netem-http-fullpqc_mtu1400_rtt50_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss2/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt50_loss2/analysis.json
+[NETEM] 205 fullpqc mtu=1400 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/205-netem-http-fullpqc_mtu1400_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0/analysis.json
+[NETEM] 206 fullpqc mtu=1400 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/206-netem-http-fullpqc_mtu1400_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p1/analysis.json
+[NETEM] 207 fullpqc mtu=1400 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/207-netem-http-fullpqc_mtu1400_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p5/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss0p5/analysis.json
+[NETEM] 208 fullpqc mtu=1400 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/208-netem-http-fullpqc_mtu1400_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss1/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss1/analysis.json
+[NETEM] 209 fullpqc mtu=1400 rtt=100 loss=2
+       Saved: results/openssl-3.5.0/209-netem-http-fullpqc_mtu1400_rtt100_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss2/capture_mlkem768_mldsa65_mtu1400.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1400_rtt100_loss2/analysis.json
+[NETEM] 210 fullpqc mtu=1280 rtt=0 loss=0
+       Saved: results/openssl-3.5.0/210-netem-http-fullpqc_mtu1280_rtt0_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0/analysis.json
+[NETEM] 211 fullpqc mtu=1280 rtt=0 loss=0.1
+       Saved: results/openssl-3.5.0/211-netem-http-fullpqc_mtu1280_rtt0_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p1/analysis.json
+[NETEM] 212 fullpqc mtu=1280 rtt=0 loss=0.5
+       Saved: results/openssl-3.5.0/212-netem-http-fullpqc_mtu1280_rtt0_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p5/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss0p5/analysis.json
+[NETEM] 213 fullpqc mtu=1280 rtt=0 loss=1
+       Saved: results/openssl-3.5.0/213-netem-http-fullpqc_mtu1280_rtt0_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss1/analysis.json
+[NETEM] 214 fullpqc mtu=1280 rtt=0 loss=2
+       Saved: results/openssl-3.5.0/214-netem-http-fullpqc_mtu1280_rtt0_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss2/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt0_loss2/analysis.json
+[NETEM] 215 fullpqc mtu=1280 rtt=20 loss=0
+       Saved: results/openssl-3.5.0/215-netem-http-fullpqc_mtu1280_rtt20_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0/analysis.json
+[NETEM] 216 fullpqc mtu=1280 rtt=20 loss=0.1
+       Saved: results/openssl-3.5.0/216-netem-http-fullpqc_mtu1280_rtt20_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p1/analysis.json
+[NETEM] 217 fullpqc mtu=1280 rtt=20 loss=0.5
+       Saved: results/openssl-3.5.0/217-netem-http-fullpqc_mtu1280_rtt20_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p5/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss0p5/analysis.json
+[NETEM] 218 fullpqc mtu=1280 rtt=20 loss=1
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1280 rtt_ms=20 loss_pct=1 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/218-netem-http-fullpqc_mtu1280_rtt20_loss1.json
+RESULT_FILE: results/openssl-3.5.0/218-netem-http-fullpqc_mtu1280_rtt20_loss1.json
+[NETEM] 219 fullpqc mtu=1280 rtt=20 loss=2
+       Saved: results/openssl-3.5.0/219-netem-http-fullpqc_mtu1280_rtt20_loss2.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss2/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss2/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt20_loss2/analysis.json
+[NETEM] 220 fullpqc mtu=1280 rtt=50 loss=0
+       Saved: results/openssl-3.5.0/220-netem-http-fullpqc_mtu1280_rtt50_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0/analysis.json
+[NETEM] 221 fullpqc mtu=1280 rtt=50 loss=0.1
+       Saved: results/openssl-3.5.0/221-netem-http-fullpqc_mtu1280_rtt50_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p1/analysis.json
+[NETEM] 222 fullpqc mtu=1280 rtt=50 loss=0.5
+       Saved: results/openssl-3.5.0/222-netem-http-fullpqc_mtu1280_rtt50_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p5/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss0p5/analysis.json
+[NETEM] 223 fullpqc mtu=1280 rtt=50 loss=1
+       Saved: results/openssl-3.5.0/223-netem-http-fullpqc_mtu1280_rtt50_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt50_loss1/analysis.json
+[NETEM] 224 fullpqc mtu=1280 rtt=50 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1280 rtt_ms=50 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/224-netem-http-fullpqc_mtu1280_rtt50_loss2.json
+RESULT_FILE: results/openssl-3.5.0/224-netem-http-fullpqc_mtu1280_rtt50_loss2.json
+[NETEM] 225 fullpqc mtu=1280 rtt=100 loss=0
+       Saved: results/openssl-3.5.0/225-netem-http-fullpqc_mtu1280_rtt100_loss0.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0/analysis.json
+[NETEM] 226 fullpqc mtu=1280 rtt=100 loss=0.1
+       Saved: results/openssl-3.5.0/226-netem-http-fullpqc_mtu1280_rtt100_loss0p1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p1/analysis.json
+[NETEM] 227 fullpqc mtu=1280 rtt=100 loss=0.5
+       Saved: results/openssl-3.5.0/227-netem-http-fullpqc_mtu1280_rtt100_loss0p5.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p5/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p5/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss0p5/analysis.json
+[NETEM] 228 fullpqc mtu=1280 rtt=100 loss=1
+       Saved: results/openssl-3.5.0/228-netem-http-fullpqc_mtu1280_rtt100_loss1.json
+PQC Benchmarking Suite v0.1.2
+Analyzing PCAP: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss1/capture_mlkem768_mldsa65_mtu1280.pcap
+
+Results written to results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss1/analysis.json
+       PCAP analysis attached: results/openssl-3.5.0/netem-pcaps/fullpqc_mtu1280_rtt100_loss1/analysis.json
+[NETEM] 229 fullpqc mtu=1280 rtt=100 loss=2
+       Netem run failed (exit 1)
+[INFO] === Netem HTTP Run ===
+[INFO] groups=mlkem768 sig=mldsa65 mtu=1280 rtt_ms=100 loss_pct=2 rate=none dir=both
+[INFO] samples=1000 warm_up=100 timeout_s=5 concurrency=1
+PQC Benchmarking Suite v0.1.2
+HTTP benchmark: https://10.200.1.1:44333/ (openssl)
+
+Results written to results/openssl-3.5.0/229-netem-http-fullpqc_mtu1280_rtt100_loss2.json
+RESULT_FILE: results/openssl-3.5.0/229-netem-http-fullpqc_mtu1280_rtt100_loss2.json
+Fixing ownership of netem sweep files...
+
+Netem sweeps complete.
+
+==========================================
+All benchmarks complete!
+Finished at: sáb 20 dic 2025 00:53:14 CET
+Results saved to: results/openssl-3.5.0/
+==========================================
+-rw-rw-r-- 1 crypto crypto  11773 dic 18 11:53 results/openssl-3.5.0/01-mlkem.json
+-rw-rw-r-- 1 crypto crypto  11754 dic 15 20:23 results/openssl-3.5.0/01-mlkem-native.json
+-rw-rw-r-- 1 crypto crypto  23060 dic 15 20:33 results/openssl-3.5.0/02-frodo.json
+-rw-rw-r-- 1 crypto crypto  10956 dic 15 20:39 results/openssl-3.5.0/03-bike.json
+-rw-rw-r-- 1 crypto crypto  40397 dic 15 20:59 results/openssl-3.5.0/04-hybrid-mlkem.json
+-rw-rw-r-- 1 crypto crypto  11378 dic 15 21:04 results/openssl-3.5.0/04-hybrid-mlkem-native.json
+-rw-rw-r-- 1 crypto crypto  37000 dic 15 21:22 results/openssl-3.5.0/05-hybrid-frodo.json
+-rw-rw-r-- 1 crypto crypto  17025 dic 15 21:32 results/openssl-3.5.0/06-hybrid-bike.json
+-rw-rw-r-- 1 crypto crypto   7714 dic 15 21:37 results/openssl-3.5.0/07-mldsa-oqs.json
+-rw-rw-r-- 1 crypto crypto  10124 dic 15 21:44 results/openssl-3.5.0/08-falcon.json
+-rw-rw-r-- 1 crypto crypto  10011 dic 15 21:51 results/openssl-3.5.0/09-sphincs.json
+-rw-r--r-- 1 crypto crypto 325239 dic 19 15:41 results/openssl-3.5.0/100-netem-http-classical_mtu1280_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325329 dic 19 15:46 results/openssl-3.5.0/101-netem-http-classical_mtu1280_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325230 dic 19 15:50 results/openssl-3.5.0/102-netem-http-classical_mtu1280_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325137 dic 19 15:55 results/openssl-3.5.0/103-netem-http-classical_mtu1280_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 325024 dic 19 16:01 results/openssl-3.5.0/104-netem-http-classical_mtu1280_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323916 dic 19 16:08 results/openssl-3.5.0/105-netem-http-classical_mtu1280_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 324030 dic 19 16:16 results/openssl-3.5.0/106-netem-http-classical_mtu1280_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323982 dic 19 16:24 results/openssl-3.5.0/107-netem-http-classical_mtu1280_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323868 dic 19 16:33 results/openssl-3.5.0/108-netem-http-classical_mtu1280_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323859 dic 19 16:43 results/openssl-3.5.0/109-netem-http-classical_mtu1280_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto  10119 dic 15 21:59 results/openssl-3.5.0/10-mayo.json
+-rw-r--r-- 1 crypto crypto 325799 dic 19 16:43 results/openssl-3.5.0/110-netem-http-hybrid_mtu1500_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325811 dic 19 16:43 results/openssl-3.5.0/111-netem-http-hybrid_mtu1500_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325760 dic 19 16:44 results/openssl-3.5.0/112-netem-http-hybrid_mtu1500_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325736 dic 19 16:45 results/openssl-3.5.0/113-netem-http-hybrid_mtu1500_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325702 dic 19 16:46 results/openssl-3.5.0/114-netem-http-hybrid_mtu1500_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321970 dic 19 16:48 results/openssl-3.5.0/115-netem-http-hybrid_mtu1500_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321962 dic 19 16:50 results/openssl-3.5.0/116-netem-http-hybrid_mtu1500_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322149 dic 19 16:52 results/openssl-3.5.0/117-netem-http-hybrid_mtu1500_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322265 dic 19 16:54 results/openssl-3.5.0/118-netem-http-hybrid_mtu1500_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322147 dic 19 16:58 results/openssl-3.5.0/119-netem-http-hybrid_mtu1500_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto  23299 dic 15 22:17 results/openssl-3.5.0/11-experimental.json
+-rw-r--r-- 1 crypto crypto 325384 dic 19 17:02 results/openssl-3.5.0/120-netem-http-hybrid_mtu1500_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325318 dic 19 17:06 results/openssl-3.5.0/121-netem-http-hybrid_mtu1500_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325295 dic 19 17:10 results/openssl-3.5.0/122-netem-http-hybrid_mtu1500_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325279 dic 19 17:15 results/openssl-3.5.0/123-netem-http-hybrid_mtu1500_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 325037 dic 19 17:21 results/openssl-3.5.0/124-netem-http-hybrid_mtu1500_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323997 dic 19 17:29 results/openssl-3.5.0/125-netem-http-hybrid_mtu1500_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323998 dic 19 17:37 results/openssl-3.5.0/126-netem-http-hybrid_mtu1500_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 324052 dic 19 17:45 results/openssl-3.5.0/127-netem-http-hybrid_mtu1500_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323934 dic 19 17:54 results/openssl-3.5.0/128-netem-http-hybrid_mtu1500_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323468 dic 19 18:04 results/openssl-3.5.0/129-netem-http-hybrid_mtu1500_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto   9527 dic 15 22:24 results/openssl-3.5.0/12-hybrid-mldsa.json
+-rw-r--r-- 1 crypto crypto 325852 dic 19 18:04 results/openssl-3.5.0/130-netem-http-hybrid_mtu1400_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325802 dic 19 18:04 results/openssl-3.5.0/131-netem-http-hybrid_mtu1400_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325676 dic 19 18:05 results/openssl-3.5.0/132-netem-http-hybrid_mtu1400_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325708 dic 19 18:06 results/openssl-3.5.0/133-netem-http-hybrid_mtu1400_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325190 dic 19 18:08 results/openssl-3.5.0/134-netem-http-hybrid_mtu1400_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321930 dic 19 18:09 results/openssl-3.5.0/135-netem-http-hybrid_mtu1400_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321930 dic 19 18:11 results/openssl-3.5.0/136-netem-http-hybrid_mtu1400_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 321998 dic 19 18:13 results/openssl-3.5.0/137-netem-http-hybrid_mtu1400_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322254 dic 19 18:16 results/openssl-3.5.0/138-netem-http-hybrid_mtu1400_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322485 dic 19 18:19 results/openssl-3.5.0/139-netem-http-hybrid_mtu1400_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto  13958 dic 15 22:35 results/openssl-3.5.0/13-hybrid-falcon.json
+-rw-r--r-- 1 crypto crypto 325333 dic 19 18:24 results/openssl-3.5.0/140-netem-http-hybrid_mtu1400_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325278 dic 19 18:28 results/openssl-3.5.0/141-netem-http-hybrid_mtu1400_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325204 dic 19 18:32 results/openssl-3.5.0/142-netem-http-hybrid_mtu1400_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325229 dic 19 18:37 results/openssl-3.5.0/143-netem-http-hybrid_mtu1400_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 325000 dic 19 18:43 results/openssl-3.5.0/144-netem-http-hybrid_mtu1400_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323931 dic 19 18:51 results/openssl-3.5.0/145-netem-http-hybrid_mtu1400_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323916 dic 19 18:58 results/openssl-3.5.0/146-netem-http-hybrid_mtu1400_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323559 dic 19 19:07 results/openssl-3.5.0/147-netem-http-hybrid_mtu1400_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323940 dic 19 19:15 results/openssl-3.5.0/148-netem-http-hybrid_mtu1400_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323919 dic 19 19:25 results/openssl-3.5.0/149-netem-http-hybrid_mtu1400_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto  16443 dic 15 22:48 results/openssl-3.5.0/14-hybrid-sphincs.json
+-rw-r--r-- 1 crypto crypto 325780 dic 19 19:26 results/openssl-3.5.0/150-netem-http-hybrid_mtu1280_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325764 dic 19 19:26 results/openssl-3.5.0/151-netem-http-hybrid_mtu1280_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325740 dic 19 19:27 results/openssl-3.5.0/152-netem-http-hybrid_mtu1280_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325760 dic 19 19:28 results/openssl-3.5.0/153-netem-http-hybrid_mtu1280_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325291 dic 19 19:29 results/openssl-3.5.0/154-netem-http-hybrid_mtu1280_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321915 dic 19 19:31 results/openssl-3.5.0/155-netem-http-hybrid_mtu1280_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321960 dic 19 19:33 results/openssl-3.5.0/156-netem-http-hybrid_mtu1280_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322045 dic 19 19:35 results/openssl-3.5.0/157-netem-http-hybrid_mtu1280_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322223 dic 19 19:37 results/openssl-3.5.0/158-netem-http-hybrid_mtu1280_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322213 dic 19 19:41 results/openssl-3.5.0/159-netem-http-hybrid_mtu1280_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto   9591 dic 15 22:55 results/openssl-3.5.0/15-hybrid-mayo.json
+-rw-r--r-- 1 crypto crypto 325288 dic 19 19:45 results/openssl-3.5.0/160-netem-http-hybrid_mtu1280_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325261 dic 19 19:49 results/openssl-3.5.0/161-netem-http-hybrid_mtu1280_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325203 dic 19 19:53 results/openssl-3.5.0/162-netem-http-hybrid_mtu1280_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325225 dic 19 19:58 results/openssl-3.5.0/163-netem-http-hybrid_mtu1280_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 324484 dic 19 20:04 results/openssl-3.5.0/164-netem-http-hybrid_mtu1280_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 324015 dic 19 20:12 results/openssl-3.5.0/165-netem-http-hybrid_mtu1280_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323972 dic 19 20:20 results/openssl-3.5.0/166-netem-http-hybrid_mtu1280_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 324067 dic 19 20:28 results/openssl-3.5.0/167-netem-http-hybrid_mtu1280_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323960 dic 19 20:37 results/openssl-3.5.0/168-netem-http-hybrid_mtu1280_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323458 dic 19 20:47 results/openssl-3.5.0/169-netem-http-hybrid_mtu1280_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto   9579 dic 15 23:02 results/openssl-3.5.0/16-hybrid-ov.json
+-rw-r--r-- 1 crypto crypto 325639 dic 19 20:47 results/openssl-3.5.0/170-netem-http-fullpqc_mtu1500_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325709 dic 19 20:47 results/openssl-3.5.0/171-netem-http-fullpqc_mtu1500_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325723 dic 19 20:48 results/openssl-3.5.0/172-netem-http-fullpqc_mtu1500_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325687 dic 19 20:49 results/openssl-3.5.0/173-netem-http-fullpqc_mtu1500_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325204 dic 19 20:50 results/openssl-3.5.0/174-netem-http-fullpqc_mtu1500_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321836 dic 19 20:52 results/openssl-3.5.0/175-netem-http-fullpqc_mtu1500_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321903 dic 19 20:54 results/openssl-3.5.0/176-netem-http-fullpqc_mtu1500_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322153 dic 19 20:56 results/openssl-3.5.0/177-netem-http-fullpqc_mtu1500_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322256 dic 19 20:59 results/openssl-3.5.0/178-netem-http-fullpqc_mtu1500_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322309 dic 19 21:02 results/openssl-3.5.0/179-netem-http-fullpqc_mtu1500_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto  11939 dic 15 23:11 results/openssl-3.5.0/17-hybrid-snova.json
+-rw-r--r-- 1 crypto crypto 325323 dic 19 21:06 results/openssl-3.5.0/180-netem-http-fullpqc_mtu1500_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325186 dic 19 21:10 results/openssl-3.5.0/181-netem-http-fullpqc_mtu1500_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325141 dic 19 21:15 results/openssl-3.5.0/182-netem-http-fullpqc_mtu1500_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325044 dic 19 21:20 results/openssl-3.5.0/183-netem-http-fullpqc_mtu1500_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 324474 dic 19 21:25 results/openssl-3.5.0/184-netem-http-fullpqc_mtu1500_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 324007 dic 19 21:33 results/openssl-3.5.0/185-netem-http-fullpqc_mtu1500_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323787 dic 19 21:41 results/openssl-3.5.0/186-netem-http-fullpqc_mtu1500_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323824 dic 19 21:49 results/openssl-3.5.0/187-netem-http-fullpqc_mtu1500_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323791 dic 19 21:58 results/openssl-3.5.0/188-netem-http-fullpqc_mtu1500_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323765 dic 19 22:08 results/openssl-3.5.0/189-netem-http-fullpqc_mtu1500_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto   8299 dic 19 12:39 results/openssl-3.5.0/18-http-openssl-hybrid.json
+-rw-r--r-- 1 crypto crypto 325743 dic 19 22:09 results/openssl-3.5.0/190-netem-http-fullpqc_mtu1400_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325668 dic 19 22:09 results/openssl-3.5.0/191-netem-http-fullpqc_mtu1400_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325664 dic 19 22:10 results/openssl-3.5.0/192-netem-http-fullpqc_mtu1400_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325784 dic 19 22:11 results/openssl-3.5.0/193-netem-http-fullpqc_mtu1400_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325659 dic 19 22:12 results/openssl-3.5.0/194-netem-http-fullpqc_mtu1400_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321868 dic 19 22:14 results/openssl-3.5.0/195-netem-http-fullpqc_mtu1400_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321933 dic 19 22:16 results/openssl-3.5.0/196-netem-http-fullpqc_mtu1400_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322127 dic 19 22:18 results/openssl-3.5.0/197-netem-http-fullpqc_mtu1400_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322400 dic 19 22:20 results/openssl-3.5.0/198-netem-http-fullpqc_mtu1400_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322217 dic 19 22:24 results/openssl-3.5.0/199-netem-http-fullpqc_mtu1400_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto   8316 dic 19 12:39 results/openssl-3.5.0/19-http-openssl-hybrid-session.json
+-rw-r--r-- 1 crypto crypto 325277 dic 19 22:28 results/openssl-3.5.0/200-netem-http-fullpqc_mtu1400_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325204 dic 19 22:32 results/openssl-3.5.0/201-netem-http-fullpqc_mtu1400_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325142 dic 19 22:37 results/openssl-3.5.0/202-netem-http-fullpqc_mtu1400_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325080 dic 19 22:42 results/openssl-3.5.0/203-netem-http-fullpqc_mtu1400_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 324979 dic 19 22:47 results/openssl-3.5.0/204-netem-http-fullpqc_mtu1400_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323933 dic 19 22:55 results/openssl-3.5.0/205-netem-http-fullpqc_mtu1400_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323916 dic 19 23:03 results/openssl-3.5.0/206-netem-http-fullpqc_mtu1400_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323840 dic 19 23:11 results/openssl-3.5.0/207-netem-http-fullpqc_mtu1400_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323882 dic 19 23:20 results/openssl-3.5.0/208-netem-http-fullpqc_mtu1400_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323902 dic 19 23:30 results/openssl-3.5.0/209-netem-http-fullpqc_mtu1400_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto   8301 dic 19 12:39 results/openssl-3.5.0/20-http-openssl-classical.json
+-rw-r--r-- 1 crypto crypto 325764 dic 19 23:31 results/openssl-3.5.0/210-netem-http-fullpqc_mtu1280_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325809 dic 19 23:31 results/openssl-3.5.0/211-netem-http-fullpqc_mtu1280_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325641 dic 19 23:32 results/openssl-3.5.0/212-netem-http-fullpqc_mtu1280_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325706 dic 19 23:33 results/openssl-3.5.0/213-netem-http-fullpqc_mtu1280_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325651 dic 19 23:34 results/openssl-3.5.0/214-netem-http-fullpqc_mtu1280_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 321844 dic 19 23:36 results/openssl-3.5.0/215-netem-http-fullpqc_mtu1280_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 321924 dic 19 23:38 results/openssl-3.5.0/216-netem-http-fullpqc_mtu1280_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322011 dic 19 23:40 results/openssl-3.5.0/217-netem-http-fullpqc_mtu1280_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 321931 dic 19 23:43 results/openssl-3.5.0/218-netem-http-fullpqc_mtu1280_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322717 dic 19 23:46 results/openssl-3.5.0/219-netem-http-fullpqc_mtu1280_rtt20_loss2.json
+-rw-rw-r-- 1 crypto crypto  12248 dic 19 12:39 results/openssl-3.5.0/21-http-playwright-chromium.json
+-rw-r--r-- 1 crypto crypto 325248 dic 19 23:50 results/openssl-3.5.0/220-netem-http-fullpqc_mtu1280_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325262 dic 19 23:54 results/openssl-3.5.0/221-netem-http-fullpqc_mtu1280_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325123 dic 19 23:58 results/openssl-3.5.0/222-netem-http-fullpqc_mtu1280_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325033 dic 20 00:04 results/openssl-3.5.0/223-netem-http-fullpqc_mtu1280_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 324474 dic 20 00:10 results/openssl-3.5.0/224-netem-http-fullpqc_mtu1280_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323917 dic 20 00:17 results/openssl-3.5.0/225-netem-http-fullpqc_mtu1280_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323874 dic 20 00:25 results/openssl-3.5.0/226-netem-http-fullpqc_mtu1280_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323870 dic 20 00:33 results/openssl-3.5.0/227-netem-http-fullpqc_mtu1280_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323783 dic 20 00:42 results/openssl-3.5.0/228-netem-http-fullpqc_mtu1280_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323468 dic 20 00:53 results/openssl-3.5.0/229-netem-http-fullpqc_mtu1280_rtt100_loss2.json
+-rw-rw-r-- 1 crypto crypto   7879 dic 16 10:22 results/openssl-3.5.0/22-http-openssl-pqc-mlkem512.json
+-rw-rw-r-- 1 crypto crypto   7902 dic 16 10:22 results/openssl-3.5.0/23-http-openssl-pqc-mlkem768.json
+-rw-rw-r-- 1 crypto crypto   7896 dic 16 10:22 results/openssl-3.5.0/24-http-openssl-pqc-mlkem1024.json
+-rw-rw-r-- 1 crypto crypto   7884 dic 16 10:22 results/openssl-3.5.0/25-http-openssl-pqc-frodo640aes.json
+-rw-rw-r-- 1 crypto crypto   7896 dic 16 10:22 results/openssl-3.5.0/26-http-openssl-pqc-frodo976aes.json
+-rw-rw-r-- 1 crypto crypto   7880 dic 16 10:22 results/openssl-3.5.0/27-http-openssl-pqc-frodo1344aes.json
+-rw-rw-r-- 1 crypto crypto   7898 dic 16 10:22 results/openssl-3.5.0/28-http-openssl-pqc-frodo640shake.json
+-rw-rw-r-- 1 crypto crypto   7863 dic 16 10:22 results/openssl-3.5.0/29-http-openssl-pqc-frodo976shake.json
+-rw-rw-r-- 1 crypto crypto   7868 dic 16 10:22 results/openssl-3.5.0/30-http-openssl-pqc-frodo1344shake.json
+-rw-rw-r-- 1 crypto crypto   9678 dic 16 10:22 results/openssl-3.5.0/31-http-openssl-pqc-bikel1.json
+-rw-rw-r-- 1 crypto crypto   7882 dic 16 10:22 results/openssl-3.5.0/32-http-openssl-pqc-bikel3.json
+-rw-rw-r-- 1 crypto crypto   7865 dic 16 10:22 results/openssl-3.5.0/33-http-openssl-pqc-bikel5.json
+-rw-rw-r-- 1 crypto crypto   7880 dic 15 23:11 results/openssl-3.5.0/34-http-openssl-fullpqc-mlkem512-mldsa44.json
+-rw-rw-r-- 1 crypto crypto   7872 dic 15 23:11 results/openssl-3.5.0/35-http-openssl-fullpqc-mlkem768-mldsa65.json
+-rw-rw-r-- 1 crypto crypto   7880 dic 15 23:11 results/openssl-3.5.0/36-http-openssl-fullpqc-mlkem1024-mldsa87.json
+-rw-rw-r-- 1 crypto crypto   8297 dic 19 12:39 results/openssl-3.5.0/37-http-native-x25519mlkem768.json
+-rw-rw-r-- 1 crypto crypto   8309 dic 19 12:39 results/openssl-3.5.0/38-http-native-x25519mlkem768-session.json
+-rw-rw-r-- 1 crypto crypto   8316 dic 19 12:39 results/openssl-3.5.0/39-http-native-secp256r1mlkem768.json
+-rw-rw-r-- 1 crypto crypto   8317 dic 19 12:39 results/openssl-3.5.0/40-http-native-secp384r1mlkem1024.json
+-rw-rw-r-- 1 crypto crypto   8301 dic 19 12:39 results/openssl-3.5.0/41-http-native-x25519.json
+-rw-r--r-- 1 crypto crypto 274347 dic 18 11:57 results/openssl-3.5.0/42-packetization.json
+-rw-r--r-- 1 crypto crypto 325222 dic 19 12:39 results/openssl-3.5.0/50-netem-http-classical_mtu1500_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325253 dic 19 12:40 results/openssl-3.5.0/51-netem-http-classical_mtu1500_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325226 dic 19 12:40 results/openssl-3.5.0/52-netem-http-classical_mtu1500_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325132 dic 19 12:41 results/openssl-3.5.0/53-netem-http-classical_mtu1500_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325237 dic 19 12:43 results/openssl-3.5.0/54-netem-http-classical_mtu1500_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 322221 dic 19 12:45 results/openssl-3.5.0/55-netem-http-classical_mtu1500_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 322230 dic 19 12:47 results/openssl-3.5.0/56-netem-http-classical_mtu1500_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322323 dic 19 12:49 results/openssl-3.5.0/57-netem-http-classical_mtu1500_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322517 dic 19 12:51 results/openssl-3.5.0/58-netem-http-classical_mtu1500_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322805 dic 19 12:55 results/openssl-3.5.0/59-netem-http-classical_mtu1500_rtt20_loss2.json
+-rw-r--r-- 1 crypto crypto 325150 dic 19 12:59 results/openssl-3.5.0/60-netem-http-classical_mtu1500_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325250 dic 19 13:03 results/openssl-3.5.0/61-netem-http-classical_mtu1500_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325157 dic 19 13:07 results/openssl-3.5.0/62-netem-http-classical_mtu1500_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325085 dic 19 13:13 results/openssl-3.5.0/63-netem-http-classical_mtu1500_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 325033 dic 19 13:18 results/openssl-3.5.0/64-netem-http-classical_mtu1500_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323943 dic 19 13:26 results/openssl-3.5.0/65-netem-http-classical_mtu1500_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 323967 dic 19 13:34 results/openssl-3.5.0/66-netem-http-classical_mtu1500_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323954 dic 19 13:42 results/openssl-3.5.0/67-netem-http-classical_mtu1500_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323915 dic 19 13:51 results/openssl-3.5.0/68-netem-http-classical_mtu1500_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323796 dic 19 14:00 results/openssl-3.5.0/69-netem-http-classical_mtu1500_rtt100_loss2.json
+-rw-r--r-- 1 crypto crypto 325290 dic 19 14:01 results/openssl-3.5.0/70-netem-http-classical_mtu1400_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325326 dic 19 14:01 results/openssl-3.5.0/71-netem-http-classical_mtu1400_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325239 dic 19 14:02 results/openssl-3.5.0/72-netem-http-classical_mtu1400_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325262 dic 19 14:03 results/openssl-3.5.0/73-netem-http-classical_mtu1400_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325268 dic 19 14:04 results/openssl-3.5.0/74-netem-http-classical_mtu1400_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 322202 dic 19 14:06 results/openssl-3.5.0/75-netem-http-classical_mtu1400_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 322209 dic 19 14:08 results/openssl-3.5.0/76-netem-http-classical_mtu1400_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322458 dic 19 14:10 results/openssl-3.5.0/77-netem-http-classical_mtu1400_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322535 dic 19 14:13 results/openssl-3.5.0/78-netem-http-classical_mtu1400_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322350 dic 19 14:16 results/openssl-3.5.0/79-netem-http-classical_mtu1400_rtt20_loss2.json
+-rw-r--r-- 1 crypto crypto 325349 dic 19 14:20 results/openssl-3.5.0/80-netem-http-classical_mtu1400_rtt50_loss0.json
+-rw-r--r-- 1 crypto crypto 325208 dic 19 14:24 results/openssl-3.5.0/81-netem-http-classical_mtu1400_rtt50_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325118 dic 19 14:29 results/openssl-3.5.0/82-netem-http-classical_mtu1400_rtt50_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325173 dic 19 14:34 results/openssl-3.5.0/83-netem-http-classical_mtu1400_rtt50_loss1.json
+-rw-r--r-- 1 crypto crypto 324986 dic 19 14:39 results/openssl-3.5.0/84-netem-http-classical_mtu1400_rtt50_loss2.json
+-rw-r--r-- 1 crypto crypto 323889 dic 19 14:47 results/openssl-3.5.0/85-netem-http-classical_mtu1400_rtt100_loss0.json
+-rw-r--r-- 1 crypto crypto 324032 dic 19 14:55 results/openssl-3.5.0/86-netem-http-classical_mtu1400_rtt100_loss0p1.json
+-rw-r--r-- 1 crypto crypto 323882 dic 19 15:03 results/openssl-3.5.0/87-netem-http-classical_mtu1400_rtt100_loss0p5.json
+-rw-r--r-- 1 crypto crypto 323902 dic 19 15:12 results/openssl-3.5.0/88-netem-http-classical_mtu1400_rtt100_loss1.json
+-rw-r--r-- 1 crypto crypto 323816 dic 19 15:22 results/openssl-3.5.0/89-netem-http-classical_mtu1400_rtt100_loss2.json
+-rw-r--r-- 1 crypto crypto 325364 dic 19 15:22 results/openssl-3.5.0/90-netem-http-classical_mtu1280_rtt0_loss0.json
+-rw-r--r-- 1 crypto crypto 325274 dic 19 15:23 results/openssl-3.5.0/91-netem-http-classical_mtu1280_rtt0_loss0p1.json
+-rw-r--r-- 1 crypto crypto 325246 dic 19 15:23 results/openssl-3.5.0/92-netem-http-classical_mtu1280_rtt0_loss0p5.json
+-rw-r--r-- 1 crypto crypto 325350 dic 19 15:24 results/openssl-3.5.0/93-netem-http-classical_mtu1280_rtt0_loss1.json
+-rw-r--r-- 1 crypto crypto 325373 dic 19 15:26 results/openssl-3.5.0/94-netem-http-classical_mtu1280_rtt0_loss2.json
+-rw-r--r-- 1 crypto crypto 322264 dic 19 15:28 results/openssl-3.5.0/95-netem-http-classical_mtu1280_rtt20_loss0.json
+-rw-r--r-- 1 crypto crypto 322294 dic 19 15:30 results/openssl-3.5.0/96-netem-http-classical_mtu1280_rtt20_loss0p1.json
+-rw-r--r-- 1 crypto crypto 322432 dic 19 15:32 results/openssl-3.5.0/97-netem-http-classical_mtu1280_rtt20_loss0p5.json
+-rw-r--r-- 1 crypto crypto 322505 dic 19 15:34 results/openssl-3.5.0/98-netem-http-classical_mtu1280_rtt20_loss1.json
+-rw-r--r-- 1 crypto crypto 322614 dic 19 15:37 results/openssl-3.5.0/99-netem-http-classical_mtu1280_rtt20_loss2.json

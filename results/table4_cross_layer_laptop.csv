@@ -1,0 +1,6 @@
+layer,metric,unit,openssl_3.4.1,openssl_3.5.0,relative_change_pct
+primitive,keygen,us,48.9082,73.2623,49.7956
+primitive,encaps,us,79.6679,84.7102,6.32906
+primitive,decaps,us,81.2943,66.8685,-17.7452
+tls_handshake,X25519MLKEM768 + ML-DSA-65 (summary median),ms,35.198,23.6085,-32.9266
+http_ttfb,"X25519MLKEM768 + RSA-PSS, Run A",ms,54.8295,22.355,-59.2282

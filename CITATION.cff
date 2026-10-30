@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the associated article."
+title: "Post-quantum TLS in OpenSSL 3.4.1 and 3.5.0: measurement archive and analysis"
+authors:
+  - family-names: Dubetskyy
+    given-names: Volodymyr
+    affiliation: "Universidad Politécnica de Cartagena"
+  - family-names: Cano
+    given-names: María-Dolores
+    affiliation: "Universidad Politécnica de Cartagena"
+    email: mdolores.cano@upct.es
+license: [MIT, CC-BY-4.0]
+repository-code: "https://github.com/mdcano/pqc-tls-openssl-benchmarks"
+preferred-citation:
+  type: article
+  title: "A Systems-Level Performance Study of Post-Quantum TLS with ML-KEM and ML-DSA in Modern OpenSSL"
+  authors:
+    - family-names: Dubetskyy
+      given-names: Volodymyr
+    - family-names: Cano
+      given-names: María-Dolores
+  journal: "Information"
+  year: 2026

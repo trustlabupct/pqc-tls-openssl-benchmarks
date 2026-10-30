@@ -1,0 +1,5 @@
+host,openssl,classical_median_ms,hybrid_median_ms,hybrid_overhead_pct,overhead_ci95_low_pct,overhead_ci95_high_pct,fullpqc_median_ms
+laptop,3.4.1,51.4962,54.8295,6.47291,4.09952,17.5947,34.0195
+laptop,3.5.0,22.0952,22.355,1.17555,0.523124,1.6962,22.7025
+lab-server,3.4.1,20.4136,21.9445,7.49958,6.1938,8.98153,20.7348
+lab-server,3.5.0,16.3125,16.5266,1.31251,-3.64125,7.48078,14.2985

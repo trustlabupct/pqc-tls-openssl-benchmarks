@@ -1,0 +1,16 @@
+scenario,key_establishment,authentication,mtu,server_mss,cert_der_bytes,connections_detected,qualifying_connections,mean_s2c_payload_segments,min_s2c,max_s2c,mean_c2s_payload_segments,server_flight_bytes_SH_to_Finished,min_segments_for_flight_at_mss,server_bytes_incl_tickets_and_close,file
+baseline,X25519,RSA-2048 (RSA-PSS),1500,1460,749,7,5,4,4,4,3,1305,1,1839,data/raw/openssl-3.5.0/packetization/baseline_mtu1500/analysis.json
+baseline,X25519,RSA-2048 (RSA-PSS),1400,1360,749,7,5,4,4,4,3,1305,1,1839,data/raw/openssl-3.5.0/packetization/baseline_mtu1400/analysis.json
+baseline,X25519,RSA-2048 (RSA-PSS),1280,1240,749,7,5,5,5,5,3,1305,2,1839,data/raw/openssl-3.5.0/packetization/baseline_mtu1280/analysis.json
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),1500,1460,749,7,5,5,5,5,4,2393,2,2927,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1500/analysis.json
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),1400,1360,749,7,5,5,5,5,4,2393,2,2927,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1400/analysis.json
+hybrid-kem,X25519MLKEM768,RSA-2048 (RSA-PSS),1280,1240,749,7,5,5,5,5,4,2393,2,2927,data/raw/openssl-3.5.0/packetization/hybrid-kem_mtu1280/analysis.json
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),1500,1460,749,7,5,5,5,5,4,2361,2,2895,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1500/analysis.json
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),1400,1360,749,7,5,5,5,5,4,2361,2,2895,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1400/analysis.json
+pqc-kem,ML-KEM-768,RSA-2048 (RSA-PSS),1280,1240,749,7,5,5,5,5,4,2361,2,2895,data/raw/openssl-3.5.0/packetization/pqc-kem_mtu1280/analysis.json
+pqc-cert,X25519,ML-DSA-65,1500,1460,5478,7,5,10,10,10,3,9087,7,9621,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1500/analysis.json
+pqc-cert,X25519,ML-DSA-65,1400,1360,5478,7,5,12,12,12,3,9087,7,9621,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1400/analysis.json
+pqc-cert,X25519,ML-DSA-65,1280,1240,5478,7,5,12,12,12,3,9087,8,9621,data/raw/openssl-3.5.0/packetization/pqc-cert_mtu1280/analysis.json
+full-pqc,ML-KEM-768,ML-DSA-65,1500,1460,5478,7,5,11,11,11,4,10143,7,10677,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1500/analysis.json
+full-pqc,ML-KEM-768,ML-DSA-65,1400,1360,5478,7,5,13,13,13,4,10143,8,10677,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1400/analysis.json
+full-pqc,ML-KEM-768,ML-DSA-65,1280,1240,5478,7,5,13,13,13,4,10143,9,10677,data/raw/openssl-3.5.0/packetization/full-pqc_mtu1280/analysis.json

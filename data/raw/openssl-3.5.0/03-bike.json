@@ -1,0 +1,391 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-15T20:39:25.858829",
+    "version": "0.1.2",
+    "speed_iteration_count": 1632159,
+    "speed_sample_count": 10,
+    "tls_handshake_count": 20
+  },
+  "environment": {
+    "openssl_version": "3.5.0",
+    "oqs_provider_version": "0.11.0-rc1",
+    "platform": "Linux x86_64",
+    "cpu_model": "Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz",
+    "kernel_version": "6.14.0-37-generic"
+  },
+  "results": [
+    {
+      "algorithm": "bikel1",
+      "type": "kem",
+      "is_hybrid": false,
+      "is_experimental": false,
+      "is_tls": false,
+      "operations": {
+        "keygen": {
+          "median_us": 214.9111090083698,
+          "p95_us": 221.5305645643085,
+          "p99_us": 221.87344052458116,
+          "min_us": 194.42644199611146,
+          "max_us": 221.95915951464931,
+          "ops_per_sec": 4653.0865929366855,
+          "sample_count": 10,
+          "stdev_us": 12.121803277258413,
+          "timings_us": [
+            214.50606212784274,
+            215.31615588889687,
+            194.99152210773445,
+            215.70319240724763,
+            195.1854261548471,
+            220.2902821778531,
+            221.95915951464931,
+            194.42644199611146,
+            221.00672629166974,
+            196.02718243596445
+          ]
+        },
+        "encaps": {
+          "median_us": 37.17449579587985,
+          "p95_us": 38.16942533932879,
+          "p99_us": 38.19437362684673,
+          "min_us": 33.95682145980262,
+          "max_us": 38.20061069872622,
+          "ops_per_sec": 26900.16309813226,
+          "sample_count": 10,
+          "stdev_us": 1.8945706743793618,
+          "timings_us": [
+            37.28051099153733,
+            37.18905472636816,
+            34.05182688051214,
+            37.15993686539154,
+            34.129692832764505,
+            38.13130990006526,
+            38.02621001186724,
+            33.95682145980262,
+            38.20061069872622,
+            34.13982484785513
+          ]
+        },
+        "decaps": {
+          "median_us": 701.8369426475499,
+          "p95_us": 722.2129016386745,
+          "p99_us": 722.3380775586523,
+          "min_us": 639.6588486140724,
+          "max_us": 722.3693715386468,
+          "ops_per_sec": 1424.832378055913,
+          "sample_count": 10,
+          "stdev_us": 34.157081933800995,
+          "timings_us": [
+            702.4116132053383,
+            701.2622720897616,
+            639.6588486140724,
+            703.5647279549719,
+            640.888698995941,
+            722.0216606498195,
+            719.5970256656273,
+            644.468313641246,
+            722.3693715386468,
+            678.5795068988916
+          ]
+        }
+      },
+      "sizes": {
+        "public_key_bytes": 1541,
+        "secret_key_bytes": 3114,
+        "ciphertext_bytes": 1573,
+        "source": "fallback"
+      }
+    },
+    {
+      "algorithm": "bikel3",
+      "type": "kem",
+      "is_hybrid": false,
+      "is_experimental": false,
+      "is_tls": false,
+      "operations": {
+        "keygen": {
+          "median_us": 586.067384649353,
+          "p95_us": 639.2787564017376,
+          "p99_us": 641.932690889202,
+          "min_us": 543.2814197754436,
+          "max_us": 642.5961745110682,
+          "ops_per_sec": 1706.2884340480828,
+          "sample_count": 10,
+          "stdev_us": 42.293352267458495,
+          "timings_us": [
+            630.6495690561278,
+            558.7632706276775,
+            642.5961745110682,
+            635.2241342681114,
+            613.3714986710285,
+            544.1683294032288,
+            556.8962316688323,
+            545.0581395348837,
+            543.2814197754436,
+            617.0300287947347
+          ]
+        },
+        "encaps": {
+          "median_us": 83.84424080003238,
+          "p95_us": 89.52335411837934,
+          "p99_us": 90.33245499372372,
+          "min_us": 78.29889753057323,
+          "max_us": 90.53473021255981,
+          "ops_per_sec": 11926.877629973289,
+          "sample_count": 10,
+          "stdev_us": 4.943687860374313,
+          "timings_us": [
+            87.9430129276229,
+            80.57996011426724,
+            88.28722778104768,
+            90.53473021255981,
+            87.10852148579752,
+            78.29889753057323,
+            79.55724662746455,
+            78.37483617300131,
+            78.90639432085082,
+            87.59635599159076
+          ]
+        },
+        "decaps": {
+          "median_us": 2020.283164386591,
+          "p95_us": 2235.8473629617806,
+          "p99_us": 2254.398388255007,
+          "min_us": 1934.2359767891683,
+          "max_us": 2259.0361445783133,
+          "ops_per_sec": 494.9801184447455,
+          "sample_count": 10,
+          "stdev_us": 121.24952090282581,
+          "timings_us": [
+            2087.6826722338205,
+            2012.0724346076458,
+            2028.493894165536,
+            2259.0361445783133,
+            2195.4777534646246,
+            1934.2359767891683,
+            1993.3554817275747,
+            1939.2372333548803,
+            1943.0051813471503,
+            2207.5055187637968
+          ]
+        }
+      },
+      "sizes": {
+        "public_key_bytes": 3083,
+        "secret_key_bytes": 6198,
+        "ciphertext_bytes": 3115,
+        "source": "fallback"
+      }
+    },
+    {
+      "algorithm": "bikel5",
+      "type": "kem",
+      "is_hybrid": false,
+      "is_experimental": false,
+      "is_tls": false,
+      "operations": {
+        "keygen": {
+          "median_us": 1508.8980064438178,
+          "p95_us": 1599.2670504306716,
+          "p99_us": 1613.6539491696924,
+          "min_us": 1417.733522996681,
+          "max_us": 1617.2506738544475,
+          "ops_per_sec": 662.7353179137717,
+          "sample_count": 10,
+          "stdev_us": 80.6078113356584,
+          "timings_us": [
+            1431.2977099236641,
+            1573.9769150052466,
+            1577.2870662460568,
+            1617.2506738544475,
+            1447.1153846153845,
+            1570.6806282722514,
+            1417.733522996681,
+            1431.980906921241,
+            1434.7202295552368,
+            1575.6302521008404
+          ]
+        },
+        "encaps": {
+          "median_us": 179.84373996306073,
+          "p95_us": 190.60051786750876,
+          "p99_us": 192.07517855580207,
+          "min_us": 170.662100456621,
+          "max_us": 192.4438437278754,
+          "ops_per_sec": 5560.382586602105,
+          "sample_count": 10,
+          "stdev_us": 9.329489287941579,
+          "timings_us": [
+            171.47756501857674,
+            188.34756403817178,
+            187.59018759018758,
+            192.4438437278754,
+            170.662100456621,
+            187.76991925893472,
+            171.21333181143706,
+            171.39918871050676,
+            172.0972923359339,
+            188.21757952192735
+          ]
+        },
+        "decaps": {
+          "median_us": 5006.336078967553,
+          "p95_us": 5330.719077766229,
+          "p99_us": 5374.9409430218275,
+          "min_us": 4754.358161648178,
+          "max_us": 5385.996409335728,
+          "ops_per_sec": 199.74687760199834,
+          "sample_count": 10,
+          "stdev_us": 275.16734900641563,
+          "timings_us": [
+            4754.358161648178,
+            5263.1578947368425,
+            5262.237762237763,
+            5385.996409335728,
+            4755.134281200632,
+            5244.755244755244,
+            4770.206022187005,
+            4754.358161648178,
+            4777.070063694267,
+            5235.602094240838
+          ]
+        }
+      },
+      "sizes": {
+        "public_key_bytes": 5122,
+        "secret_key_bytes": 10276,
+        "ciphertext_bytes": 5154,
+        "source": "fallback"
+      }
+    },
+    {
+      "algorithm": "bikel3+mldsa65",
+      "type": "tls",
+      "is_hybrid": false,
+      "is_experimental": false,
+      "is_tls": true,
+      "operations": {
+        "handshake": {
+          "median_us": 27934.0,
+          "p95_us": 28495.8,
+          "p99_us": 28602.36,
+          "min_us": 27276.0,
+          "max_us": 28629.0,
+          "ops_per_sec": 35.79866828953963,
+          "sample_count": 10,
+          "stdev_us": 399.9619981948285,
+          "timings_us": [
+            27858.0,
+            27958.0,
+            28232.0,
+            27696.0,
+            28333.0,
+            28152.0,
+            27910.0,
+            28629.0,
+            27522.0,
+            27276.0
+          ]
+        }
+      },
+      "sizes": {},
+      "tls": {
+        "kem": "bikel3",
+        "sig": "mldsa65"
+      }
+    },
+    {
+      "algorithm": "bikel5+mldsa65",
+      "type": "tls",
+      "is_hybrid": false,
+      "is_experimental": false,
+      "is_tls": true,
+      "operations": {
+        "handshake": {
+          "median_us": 32689.5,
+          "p95_us": 35019.0,
+          "p99_us": 35091.0,
+          "min_us": 32077.0,
+          "max_us": 35109.0,
+          "ops_per_sec": 30.590862509368453,
+          "sample_count": 10,
+          "stdev_us": 1163.7154339060348,
+          "timings_us": [
+            32877.0,
+            32226.0,
+            32077.0,
+            33104.0,
+            32126.0,
+            34262.0,
+            32502.0,
+            34909.0,
+            32463.0,
+            35109.0
+          ]
+        }
+      },
+      "sizes": {},
+      "tls": {
+        "kem": "bikel5",
+        "sig": "mldsa65"
+      }
+    }
+  ],
+  "tls_details": [
+    {
+      "kem_algorithm": "bikel1",
+      "sig_algorithm": "mldsa65",
+      "success_count": 0,
+      "fail_count": 0,
+      "total_count": 0,
+      "error": "Generating certificate with mldsa65...\nStarting TLS 1.3 server on port 4433...\nRunning 10 TLS 1.3 handshakes with bikel1...\n"
+    },
+    {
+      "kem_algorithm": "bikel3",
+      "sig_algorithm": "mldsa65",
+      "success_count": 10,
+      "fail_count": 0,
+      "total_count": 10,
+      "connection_info": {
+        "protocol": "TLSv1.3",
+        "cipher": "TLS_AES_256_GCM_SHA384",
+        "signature": "mldsa65"
+      },
+      "stats": {
+        "median_us": 27934.0,
+        "p95_us": 28495.8,
+        "p99_us": 28602.36,
+        "min_us": 27276.0,
+        "max_us": 28629.0,
+        "stdev_us": 399.9619981948285
+      }
+    },
+    {
+      "kem_algorithm": "bikel5",
+      "sig_algorithm": "mldsa65",
+      "success_count": 10,
+      "fail_count": 0,
+      "total_count": 10,
+      "connection_info": {
+        "protocol": "TLSv1.3",
+        "cipher": "TLS_AES_256_GCM_SHA384",
+        "signature": "mldsa65"
+      },
+      "stats": {
+        "median_us": 32689.5,
+        "p95_us": 35019.0,
+        "p99_us": 35091.0,
+        "min_us": 32077.0,
+        "max_us": 35109.0,
+        "stdev_us": 1163.7154339060348
+      }
+    }
+  ],
+  "error": "partial_failure",
+  "message": "1 of 6 algorithms failed",
+  "failed_algorithms": [
+    {
+      "algorithm": "tls:bikel1",
+      "reason": "Generating certificate with mldsa65...\nStarting TLS 1.3 server on port 4433...\nRunning 10 TLS 1.3 handshakes with bikel1...\n"
+    }
+  ]
+}

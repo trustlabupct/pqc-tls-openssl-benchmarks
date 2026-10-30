@@ -1,0 +1,17 @@
+host,openssl,comparison,median_a_ms,median_b_ms,diff_ms,diff_ci95_low_ms,diff_ci95_high_ms,diff_pct
+laptop,3.4.1,key establishment X25519 -> X25519MLKEM768 (RSA-PSS fixed),51.4962,54.8295,3.3333,2.14843,9.05326,6.47291
+laptop,3.4.1,key establishment X25519 -> ML-KEM-768 (RSA-PSS fixed),51.4962,37.0201,-14.4761,-16.3511,-13.5844,-28.111
+laptop,3.4.1,authentication RSA-PSS -> ML-DSA-65 (ML-KEM-768 fixed),37.0201,34.0195,-3.00057,-4.1929,-0.916291,-8.10527
+laptop,3.4.1,both changed: classical -> full PQC,51.4962,34.0195,-17.4767,-18.6543,-16.2065,-33.9378
+laptop,3.5.0,key establishment X25519 -> X25519MLKEM768 (RSA-PSS fixed),22.0952,22.355,0.259742,0.116148,0.373761,1.17555
+laptop,3.5.0,key establishment X25519 -> ML-KEM-768 (RSA-PSS fixed),22.0952,25.5282,3.43293,2.87533,5.01558,15.537
+laptop,3.5.0,authentication RSA-PSS -> ML-DSA-65 (ML-KEM-768 fixed),25.5282,22.7025,-2.82568,-4.55023,-2.20611,-11.0689
+laptop,3.5.0,both changed: classical -> full PQC,22.0952,22.7025,0.607257,0.288071,1.0584,2.74836
+lab-server,3.4.1,key establishment X25519 -> X25519MLKEM768 (RSA-PSS fixed),20.4136,21.9445,1.53093,1.27147,1.8066,7.49958
+lab-server,3.4.1,key establishment X25519 -> ML-KEM-768 (RSA-PSS fixed),20.4136,20.7188,0.305168,-0.0315903,0.577766,1.49493
+lab-server,3.4.1,authentication RSA-PSS -> ML-DSA-65 (ML-KEM-768 fixed),20.7188,20.7348,0.0160796,-0.120176,0.358326,0.0776088
+lab-server,3.4.1,both changed: classical -> full PQC,20.4136,20.7348,0.321248,0.143537,0.632343,1.57369
+lab-server,3.5.0,key establishment X25519 -> X25519MLKEM768 (RSA-PSS fixed),16.3125,16.5266,0.214104,-0.608767,1.18178,1.31251
+lab-server,3.5.0,key establishment X25519 -> ML-KEM-768 (RSA-PSS fixed),16.3125,14.2052,-2.10729,-2.66015,-1.5007,-12.9183
+lab-server,3.5.0,authentication RSA-PSS -> ML-DSA-65 (ML-KEM-768 fixed),14.2052,14.2985,0.093342,-0.15826,0.412479,0.657097
+lab-server,3.5.0,both changed: classical -> full PQC,16.3125,14.2985,-2.01395,-2.65301,-1.33299,-12.3461
