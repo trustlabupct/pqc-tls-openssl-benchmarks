@@ -10,7 +10,7 @@ authors:
     affiliation: "Universidad Politécnica de Cartagena"
     email: mdolores.cano@upct.es
 license: [MIT, CC-BY-4.0]
-repository-code: "https://github.com/mdcano/pqc-tls-openssl-benchmarks"
+repository-code: "https://github.com/trustlabupct/pqc-tls-openssl-benchmarks"
 preferred-citation:
   type: article
   title: "A Systems-Level Performance Study of Post-Quantum TLS with ML-KEM and ML-DSA in Modern OpenSSL"
