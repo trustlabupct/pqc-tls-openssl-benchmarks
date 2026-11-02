@@ -40,7 +40,7 @@ The benchmark suite's unit tests run with `pip install -e . && pytest` (Python �
 | Repeated netem records (Table S3) | `03_network_grid.py` | `S3_repeated_netem_records.csv` | 47 later lab-server/3.4.1 records |
 | Figure 1c–d, Table S2 (delay classes) | `04_tail_events.py` | `tail_classes_by_config_and_loss.csv`, `tail_class_differences_vs_classical.csv`, `S2_tail_classes_by_profile.csv`, `excess_delay_histogram.csv` | same 720 profiles |
 | Figure 2, Table 6 (packetization, record bytes) | `05_packetization.py` | `figure2_packetization_segments.csv`, `table6_tls_record_bytes_mtu1500.csv`, `packetization_copies.csv` | `openssl-3.5.0/packetization/*/analysis.json` |
-| Figures 3–4 (concurrency) | `06_capacity.py` | `capacity_concurrency.csv` | `openssl-3.4.1/` and `openssl-3.5.0/` `*-capacity-http-*.json` |
+| Figures 3–4 (concurrency) | `06_capacity.py`, `make_figures.py` | `capacity_concurrency.csv`, `figures/figure3_*.png`, `figures/figure4_*.png` | `openssl-3.4.1/` and `openssl-3.5.0/` `*-capacity-http-*.json` |
 
 Table and figure numbers refer to the revised manuscript.
 
@@ -53,6 +53,10 @@ Table and figure numbers refer to the revised manuscript.
 ## Limitations of the archive
 
 See `docs/PROVENANCE_AND_LIMITATIONS.md`. In brief: the exact source commit, build options and liboqs version of the original runs were not recorded; the records do not identify which provider executed a given algorithm; binary packet captures were not retained (only parsed per-connection summaries); the `retransmissions` and `out_of_order` fields of the packetization summaries are not populated by the parser and must not be read as measured zeros; and phase-level timestamps were not recorded.
+
+## Citing a fixed version
+
+The article cites release **v1.0.0** of this repository. Later commits may add material but do not alter `data/raw/`.
 
 ## Licence
 
